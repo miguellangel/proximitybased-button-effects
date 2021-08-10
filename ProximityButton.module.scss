@@ -1,0 +1,78 @@
+#app {
+	justify-content: center;
+	align-items: center;
+	
+	#btn-cursor-watcher {
+		
+		width: max-content;
+		padding: 3em;
+		//border: 1px solid brown;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		&:hover {
+/* 				span {
+				transform: translate(0%) !important;
+				position: relative;
+				display: inline-block;
+				transition: 250ms ease;
+				font-weight: 600;
+				display: none;
+			
+			} */
+		}
+		
+		.btn-animated {
+			background: white;
+			border: 2px solid transparent;
+			padding:10%;
+			cursor: pointer;
+			position: relative;
+			overflow: hidden;
+			min-width: max-content;
+			color: darkslategray;
+			//box-shadow: 0px 0px 0.5em -4px #aabec9;
+			
+			//box-shadow: -10px 1px 0.5em -10px #aabec9, 10px 1px 0.5em -10px #aabec9;
+
+
+			&:hover {
+				
+				animation: pulse 750ms 50ms ease forwards 1;
+				//box-shadow: inset 0px 0px 0.5em -1px #00191919;
+				
+			}
+			
+			div {
+				display: flex; 
+				flex-flow: row nowrap;
+				align-items: center;
+				z-index: 3;
+				
+				&:hover {
+					/* background: -webkit-linear-gradient(0deg, red 0px, blue);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+						*/
+				}
+			}
+
+			
+			
+			span {
+				transform: translate(30px);
+				position: relative;
+				display: inline-block;
+				transition: 10ms linear;
+				font-weight: 600;
+			}
+
+			@keyframes pulse {
+				to {
+					/* scale: 0.9; */
+				}
+			}
+		}
+	}
+}
